@@ -11,5 +11,13 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         val view = TextView(this)
         setContentView(R.layout.activity_main)
+        val nome = findViewById<TextView>(R.id.nome)
+        nome.text="Cesta de compras"
+
+        val descricao = findViewById<TextView>(R.id.descricao)
+        descricao.text="Feijão,biscoito,arroz,café,açucar."
+
+        val valor = findViewById<TextView>(R.id.valor)
+        valor.text="25.99 R$"
     }
 }
